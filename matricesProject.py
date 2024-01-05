@@ -45,9 +45,9 @@ def add_AB():
     if result is not None:
         print(f"\n{result}")
 
-def mul_AB(): # needs rework it should be -12?
+def mul_AB():
     matrix_a = np.array([2, 1, 3]).reshape(1, 3)
-    matrix_b = np.array([-2, 1, 3]).reshape(3, 1)
+    matrix_b = np.array([-2, 1, -3]).reshape(3, 1)
     try:
         result = multiply_matrices(matrix_a, matrix_b)
     except ValueError:
@@ -116,7 +116,7 @@ def main():
 
     # part 2
     add_AB()
-    mul_AB() # rework?
+    mul_AB()
     add_FH()
     sub_CA()
     mul_AB2()
