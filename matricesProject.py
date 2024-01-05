@@ -8,7 +8,7 @@ def generate_matrix_b():
     return np.array([-1, 2, -4, 5]).reshape(4, 1)
 
 def generate_matrix_c():
-    return np.zeros((3, 2))
+    return np.zeros((3, 2), dtype=int)
 
 def generate_matrix_d():
     return np.array([2, 1, 3, 6, 7])
@@ -76,7 +76,7 @@ def sub_CA():
         print(f"\n{result}")
 
 def mul_AB2():
-    matrix_a = np.array([1, 0, -3, 2, 4, 1]).reshape(2, 3)
+    matrix_a = np.array([1, 0, -3, -2, 4, 1]).reshape(2, 3)
     matrix_b = np.array([1, 0, 4, 1, -2, 3, -1, 5, 0, -1, 2, 1]).reshape(3, 4)
     try:
         result = multiply_matrices(matrix_a, matrix_b)
