@@ -86,8 +86,8 @@ def mul_AB2():
         print(f"\n{result}")
 
 def mul_DC():
-    matrix_a = np.array([1, -2, 0, 4, -3, 1]).reshape(3, 2)
-    matrix_b = np.array([2, -1, 3, 0]).reshape(2, 2)
+    matrix_a = np.array([2, -1, 3, 0]).reshape(2, 2)
+    matrix_b = np.array([1, -2, 0, 4, -3, 1]).reshape(3, 2)
     try:
         result = multiply_matrices(matrix_a, matrix_b)
     except ValueError:
